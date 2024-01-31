@@ -20,9 +20,12 @@ import com.kms.katalon.core.testobject.TestObject
 import com.kms.katalon.core.testobject.ConditionType
 
 String eclipseImg = "//img[@class='logo-desktop']"
+String hashTag = '#1 FREE AI STREAM EDITOR'
 
 WebUI.openBrowser(null);
 
-WebUI.navigateToUrl("https://eklipse.gg/eklipse-landing-hero-two/");
+WebUI.navigateToUrl("https://eklipse.gg");
 
 WebUI.verifyElementPresent(new TestObject().addProperty('xpath', ConditionType.EQUALS, eclipseImg), 10);
+
+WebUI.verifyTextPresent(hashTag, true); 
