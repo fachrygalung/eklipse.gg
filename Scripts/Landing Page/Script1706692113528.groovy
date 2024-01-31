@@ -16,9 +16,13 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import com.kms.katalon.core.testobject.TestObject
+import com.kms.katalon.core.testobject.ConditionType
+
+String eclipseImg = "//img[@class='logo-desktop']"
 
 WebUI.openBrowser(null);
 
 WebUI.navigateToUrl("https://eklipse.gg/eklipse-landing-hero-two/");
 
-WebUI.verifyTextPresent("#1 AI GAMING STREAM HIGHLIGHTS", true);
+WebUI.verifyElementPresent(new TestObject().addProperty('xpath', ConditionType.EQUALS, eclipseImg), 10);
