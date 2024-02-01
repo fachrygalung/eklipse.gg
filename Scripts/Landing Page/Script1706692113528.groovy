@@ -29,3 +29,5 @@ WebUI.navigateToUrl("https://eklipse.gg");
 WebUI.verifyElementPresent(new TestObject().addProperty('xpath', ConditionType.EQUALS, eclipseImg), 10);
 
 WebUI.verifyTextPresent(hashTag, true); 
+
+WebUI.closeBrowser();

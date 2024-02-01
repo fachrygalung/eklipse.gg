@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalVariableEntities>
+   <description></description>
+   <name>Eklipse</name>
+   <tag></tag>
+   <defaultProfile>false</defaultProfile>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Fachri Automation Eklipse'</initValue>
+      <name>Name</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Eklipse@789'</initValue>
+      <name>Pass</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'fachry.hutagalung1@gmail.com'</initValue>
+      <name>Email</name>
+   </GlobalVariableEntity>
+</GlobalVariableEntities>
