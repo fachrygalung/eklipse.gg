@@ -19,13 +19,22 @@ import org.openqa.selenium.Keys as Keys
 import com.kms.katalon.core.testobject.TestObject
 import com.kms.katalon.core.testobject.ConditionType
 
-String eclipseImg = "//img[@class='logo-desktop']"
-String hashTag = '#1 AI GAMING STREAM HIGHLIGHTS'
 
-WebUI.openBrowser(null);
+String tabActive = '//li[@class="tab-list-item btn-filter-stream ek-tab-style tab-list-active"]';
+String tabNotActive = '//li[@class="tab-list-item btn-filter-stream ek-tab-style"]';
 
-WebUI.navigateToUrl("https://eklipse.gg");
+String tabActiveIs = WebUI.getText(new TestObject().addProperty('xpath', ConditionType.EQUALS, tabActive));
 
-WebUI.verifyElementPresent(new TestObject().addProperty('xpath', ConditionType.EQUALS, eclipseImg), 10);
+System.out.println("Tab Active Now Is : "+ tabActiveIs)
 
-WebUI.verifyTextPresent(hashTag, true); 
+WebUI.verifyTextPresent('Live Stream', true);
+
+
+//Click on other tab
+WebUI.click(new TestObject().addProperty('xpath', ConditionType.EQUALS, tabNotActive));
+
+tabActiveIs = WebUI.getText(new TestObject().addProperty('xpath', ConditionType.EQUALS, tabActive));
+
+System.out.println("Tab Active Now Is : "+ tabActiveIs)
+
+WebUI.verifyTextPresent('YouTube Highlights', true);
