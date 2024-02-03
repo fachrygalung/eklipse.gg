@@ -81,15 +81,15 @@ if(isRegisterSuccess) {
 	WebUI.click(new TestObject().addProperty('xpath', ConditionType.EQUALS, skipForNow));
 	
 	//close pop-up premium
-	/*try {
+	try {
 		
 		WebUI.click(new TestObject().addProperty('xpath', ConditionType.EQUALS, "//button[text()='Skip for now']"));
 		
 	}catch (Exception e) {
 		
-		WebUI.verifyTextPresent(GlobalVariable.Name, true); //expected user in homepage with expected account name
 		
-	}*/
+		
+	}
 }//Finished
 
 
@@ -129,14 +129,14 @@ else {
 	}
 	
 	//close pop-up
-	/*try {
+	try {
 		
 		WebUI.click(new TestObject().addProperty('xpath', ConditionType.EQUALS, "//button[text()='Skip for now']"));
 		
 	}catch (Exception e) {
 		
-		WebUI.verifyTextPresent(GlobalVariable.Name, true);
 		
-	}*/
+		
+	}
 }//Finished
 
