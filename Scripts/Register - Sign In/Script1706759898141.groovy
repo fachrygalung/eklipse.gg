@@ -62,7 +62,7 @@ String chooseRadio = "//div[@class='col-md-6 mx-md-auto p-0']/div[3]/div/div[2]"
 String continue_btn = "//button[text()='Continue']";
 String skipForNow = "//button[text()='Skip for Now']";
 
-//Register Flow to fill the interest field
+//Register Flow to fill the content interest field
 if(isRegisterSuccess) {
 	WebUI.click(new TestObject().addProperty('xpath', ConditionType.EQUALS, dropdownOne));
 	

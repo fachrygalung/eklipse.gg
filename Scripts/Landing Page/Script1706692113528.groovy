@@ -24,6 +24,8 @@ String hashTag = '#1 AI GAMING STREAM HIGHLIGHTS'
 
 WebUI.openBrowser(null);
 
+WebUI.maximizeWindow();
+
 WebUI.navigateToUrl("https://eklipse.gg");
 
 WebUI.verifyElementPresent(new TestObject().addProperty('xpath', ConditionType.EQUALS, eclipseImg), 10);
