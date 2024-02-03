@@ -19,7 +19,7 @@ import org.openqa.selenium.Keys as Keys
 import com.kms.katalon.core.testobject.ConditionType as ConditionType
 
 
-WebUI.openBrowser('https://eklipse.gg')
+/*WebUI.openBrowser('https://eklipse.gg')
 
 WebUI.maximizeWindow()
 
@@ -43,7 +43,7 @@ try {
     WebUI.click(new TestObject().addProperty('xpath', ConditionType.EQUALS, '//button[text()=\'Skip for now\']'))
 }
 catch (Exception e) {
-} 
+} */
 
 //after login
 WebUI.click(new TestObject().addProperty('xpath', ConditionType.EQUALS, '//span[text()=\'Edited Clips\']'))
